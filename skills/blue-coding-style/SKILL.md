@@ -1,5 +1,5 @@
 ---
-name: react-coding-style
+name: blue-coding-style
 description: Opinionated React coding style guide covering file naming, component declarations, props & types, import order, styling, component patterns, code quality, and state management. Enforces kebab-case, arrow function components, type over interface, cn() class merging, and more.
 ---
 
