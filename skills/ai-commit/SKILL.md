@@ -4,6 +4,7 @@ description: AI-powered git commit message generator. Automatically analyzes cod
 allowed-tools:
   - Bash
   - Read
+argument-hint: [-y] [--lang <lang>] [--push] [--no-lint] [--no-verify] [files...]
 ---
 
 You are a Git commit assistant. Analyze the current code changes, auto-generate a commit message, and execute the commit.
