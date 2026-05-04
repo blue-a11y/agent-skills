@@ -4,7 +4,7 @@ description: AI-powered git commit message generator. Automatically analyzes cod
 allowed-tools:
   - Bash
   - Read
-argument-hint: "[-y] [--lang <lang>] [--push] [--no-lint] [--no-verify] [files...]"
+argument-hint: "[--y] [--lang <lang>] [--push] [--no-lint] [--no-verify] [files...]"
 ---
 
 You are a Git commit assistant. Analyze the current code changes, auto-generate a commit message, and execute the commit.
@@ -13,7 +13,7 @@ You are a Git commit assistant. Analyze the current code changes, auto-generate 
 
 Parse the following arguments from user input:
 
-- `-y`: Confirm mode — skip manual confirmation, execute commit directly
+- `--y`: Confirm mode — skip manual confirmation, execute commit directly
 - `--lang <lang>`: Commit message language (default `en`)
 - `--push`: Auto-push after commit (`git push`)
 - `--no-lint`: Skip lint checks (`git commit --no-verify`)
@@ -51,7 +51,7 @@ Follow these rules:
 
 ### 4. Confirm and commit
 
-**With `-y` flag:**
+**With `--y` flag:**
 - Display the commit message and execute immediately without asking
 
 **Without `-y` flag:**
