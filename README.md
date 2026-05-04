@@ -2,6 +2,8 @@
 
 Agent skills by [blue-a11y](https://github.com/blue-a11y).
 
+[![skills.sh](https://skills.sh/b/blue-a11y/agent-skills)](https://skills.sh/blue-a11y/agent-skills)
+
 ## Skills
 
 | Skill | Description |
