@@ -1,0 +1,27 @@
+Recommended cover title:
+<从 5 个标题中选择最强的一条>
+
+Title options:
+1. <标题 1：具体对象 + 结果方向，不承诺收益>
+2. <标题 2：痛点型>
+3. <标题 3：方法型>
+4. <标题 4：反常识型>
+5. <标题 5：清单型>
+
+Cover visual directions:
+- <人物/主体：谁在画面里，表情或动作是什么>
+- <背景/场景：门店、电脑屏幕、白板、流程图等>
+- <版式：大标题位置、字号层级、对比色、留白>
+
+Design notes:
+- Safe area: keep key text away from edges.
+- Text length: prefer 8-14 Chinese characters for the main title.
+- Contrast: make the main title readable on a phone screen.
+
+Cover prompt variants:
+1. <封面变体 1：主体、背景、标题、标签、风格>
+2. <封面变体 2：换一种构图或视觉重点>
+3. <封面变体 3：换一种颜色、景别或排版>
+
+Risky claims or words to avoid:
+- <确定收益、保证涨粉、夸大承诺、未证实数字>

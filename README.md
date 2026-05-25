@@ -10,6 +10,7 @@ Agent skills by [blue-a11y](https://github.com/blue-a11y).
 |-------|-------------|
 | [ai-commit](./skills/ai-commit/) | AI-powered git commit message generator with Conventional Commits format |
 | [ahooks-userequest](./skills/ahooks-userequest/) | Best practices and usage guide for ahooks useRequest hook |
+| [article-content-pack](./skills/article-content-pack/) | Generate publish-ready Chinese article content packs with article, cover brief, cover images, topics, publishing copy, and review checklist |
 | [blue-coding-style](./skills/blue-coding-style/) | Opinionated React + TypeScript coding style guide by blue |
 
 ## Install
@@ -21,6 +22,7 @@ npx skills add blue-a11y/agent-skills
 # Install a specific skill
 npx skills add blue-a11y/agent-skills --skill ai-commit
 npx skills add blue-a11y/agent-skills --skill ahooks-userequest
+npx skills add blue-a11y/agent-skills --skill article-content-pack
 npx skills add blue-a11y/agent-skills --skill blue-coding-style
 ```
 

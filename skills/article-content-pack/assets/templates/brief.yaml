@@ -1,0 +1,14 @@
+topic: "<一句话选题>"
+target_audience: "<目标读者>"
+account_positioning: "<账号定位>"
+platform: "<发布平台>"
+style: "<专业 / 直接 / 轻松 / 犀利 / 其他>"
+content_goal: "<让读者理解 / 收藏 / 评论 / 私信 / 访问主页>"
+cta: "<具体行动>"
+output_directory: "~/Desktop/artcle-create/YYYY-MM-DD-topic-slug/"
+created_at: "YYYY-MM-DD"
+core_message: "<这篇文章最想让读者带走的一句话>"
+assumptions:
+  - "<缺失信息时写明假设>"
+risk_notes:
+  - "<事实、版权、合规或平台风险>"

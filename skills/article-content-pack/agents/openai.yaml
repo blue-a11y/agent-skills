@@ -1,0 +1,4 @@
+interface:
+  display_name: "文章内容包"
+  short_description: "生成文章正文摘要封面话题发布文案和审核清单"
+  default_prompt: "Use $article-content-pack to create a publish-ready Chinese article package with title, summary, body, related topics, cover images, publishing copy, and review checklist."
