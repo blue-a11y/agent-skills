@@ -22,6 +22,8 @@ Package folder:
     cover-01.(jpg|jpeg|png)
     cover-02.(jpg|jpeg|png)
     cover-03.(jpg|jpeg|png)
+    cover-04.(jpg|jpeg|png)
+    cover-05.(jpg|jpeg|png)
   publish.md
   review.md
 ```
@@ -94,8 +96,6 @@ risk_notes:
 Required sections:
 
 ```markdown
-# <article title>
-
 ## 摘要
 
 ## 正文
@@ -105,7 +105,7 @@ Required sections:
 ## 参考资料
 ```
 
-Use 800-1500 Chinese characters by default unless the user requests another length. Keep `## 摘要` within 30 Chinese characters by default unless the user explicitly asks for a longer summary. Prefer concrete observations and operational advice. Use headings to improve scanning, not to create a rigid outline.
+Do not include a `#` article title or any title options in `article.md`; all title options belong in `publish.md`. Use 800-1500 Chinese characters by default unless the user requests another length. Keep `## 摘要` within 30 Chinese characters by default unless the user explicitly asks for a longer summary. Prefer concrete observations and operational advice. Use headings to improve scanning, not to create a rigid outline.
 
 ## topics.md
 
@@ -119,22 +119,26 @@ Include:
 
 Include:
 
-- recommended cover title
-- at least 5 title options in different styles, such as direct, pain-point, method, contrarian, checklist, or curiosity-driven
+- the same title options from `publish.md`, in the same order
 - 2-3 visual directions
 - design notes for safe area, contrast, and text length
-- at least 3 cover prompt variants
+- one cover prompt for each title option in `publish.md`, with a minimum of 5 cover prompts
+- the intended output filename for each prompt, such as `covers/cover-01.png`
 - risky claims or words to avoid
 
 ## covers/
 
-Generate at least 3 finished cover images when image generation is available. Use the native output format from the image tool; JPG, JPEG, and PNG are all acceptable. Use:
+Generate one finished cover image for each recommended title option in `publish.md` when image generation is available, with a minimum of 5 images. Use `gpt-image2` by default. If the available image tool cannot explicitly select a model, record that limitation in `review.md` and still generate the images with the best available image tool. Use the native output format from the image tool; JPG, JPEG, and PNG are all acceptable. Use:
 
 ```text
 covers/cover-01.(jpg|jpeg|png)
 covers/cover-02.(jpg|jpeg|png)
 covers/cover-03.(jpg|jpeg|png)
+covers/cover-04.(jpg|jpeg|png)
+covers/cover-05.(jpg|jpeg|png)
 ```
+
+The image order must match `publish.md` title option order. For example, title option 1 maps to `cover-01`, title option 2 maps to `cover-02`, and so on.
 
 Use a vertical social-friendly format by default, usually 9:16 for Douyin/Xiaohongshu-style publishing. If the target platform needs another ratio, note it in `brief.yaml`.
 
@@ -143,6 +147,7 @@ Use a vertical social-friendly format by default, usually 9:16 for Douyin/Xiaoho
 Include:
 
 - at least 5 title options in different styles, such as direct, pain-point, method, contrarian, checklist, or curiosity-driven
+- at least 5 description copy options, each no more than 30 Chinese characters
 - caption/body for platform posting
 - hashtags/topics
 - pinned comment or comment prompt when useful
@@ -161,6 +166,8 @@ Use checkboxes. Include:
 - privacy checked
 - AI-assisted labeling decision made
 - article, topics, cover, and publish copy consistency checked
+- cover image count and content align one-to-one with `publish.md` title options
+- `publish.md` includes at least 5 description copy options, each no more than 30 Chinese characters
 - recommended publishing time is suitable for the target platform and audience, without promising traffic results
 - final human approval decision
 
@@ -169,9 +176,10 @@ Use checkboxes. Include:
 Before finishing, verify:
 
 - All required text files exist.
-- At least 3 finished cover images exist, or missing images are explicitly documented in `review.md`.
-- `article.md` includes title, summary, body, and references when needed; the summary is within 30 Chinese characters unless the user requested otherwise.
+- `article.md` does not include an article title; it includes summary, body, and references when needed; the summary is within 30 Chinese characters unless the user requested otherwise.
 - `topics.md`, `cover.txt`, and `publish.md` are consistent with the article.
-- `cover.txt` and `publish.md` each include at least 5 title options in different styles.
+- `publish.md` includes at least 5 title options in different styles and at least 5 description copy options no longer than 30 Chinese characters each.
+- `cover.txt` includes one cover prompt for each `publish.md` title option, with a minimum of 5 prompts.
+- The same number of finished cover images exists under `covers/`, with a minimum of 5 images, or missing images are explicitly documented in `review.md`.
 - `publish.md` includes recommended publishing time windows and frames them as testing guidance, not a performance guarantee.
 - No final file contains empty template rows, blank required fields, or placeholder-only content.

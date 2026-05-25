@@ -1,6 +1,6 @@
 ---
 name: article-content-pack
-description: Generate publish-ready Chinese article content packs with title, summary, body, cover brief, at least three cover images, related topics, publishing copy, and review checklist. Use when the user asks for 文章创作, 图文文章, 公众号文章, 小红书/抖音图文文案, 技术文章, 封面图, 话题标签, 发布文案, or a packaged article deliverable.
+description: Generate publish-ready Chinese article content packs with article body, summary, cover brief, cover images aligned to publish titles, related topics, publishing copy, and review checklist. Use when the user asks for 文章创作, 图文文章, 公众号文章, 小红书/抖音图文文案, 技术文章, 封面图, 话题标签, 发布文案, or a packaged article deliverable.
 ---
 
 # Article Content Pack
@@ -32,12 +32,12 @@ Within the base directory, create one package folder named `YYYY-MM-DD-topic-slu
 
 1. Collect or confirm the natural-language input template from `assets/templates/request.md`.
 2. Normalize the request into `brief.yaml`: topic, audience, account positioning, platform, style, CTA, assumptions, and risks.
-3. Write `article.md` with article title, summary, and body. Keep the summary within 30 Chinese characters by default unless the user asks for a longer one. Use natural paragraph breaks and a small number of `##` headings when they help scanning.
+3. Write `article.md` with summary and body only. Do not put an article title in `article.md`; all title options belong in `publish.md`. Keep the summary within 30 Chinese characters by default unless the user asks for a longer one. Use natural paragraph breaks and a small number of `##` headings when they help scanning.
 4. Keep the voice professional, direct, and human. Avoid generic AI writing, inflated adjectives, repetitive transitions, and overly tidy "first/second/third" structures unless the content naturally needs them.
 5. Write `topics.md` with platform-ready related topics/hashtags and short rationale.
-6. Write `cover.txt` as the cover-generation brief: recommended title, at least 5 title options in different styles, visual directions, design notes, and at least 3 cover prompt variants.
-7. Generate at least 3 finished cover images under `covers/` when image generation is available. Name them `cover-01`, `cover-02`, `cover-03` with the native image extension returned by the tool, such as `.jpg`, `.jpeg`, or `.png`.
-8. Write `publish.md` with at least 5 title options in different styles, caption, hashtags, pinned comment, CTA reply seed, recommended publishing time windows for the target platform, and manual publishing notes.
+6. Write `publish.md` with at least 5 title options in different styles, at least 5 description copy options of no more than 30 Chinese characters each, caption, hashtags, pinned comment, CTA reply seed, recommended publishing time windows for the target platform, and manual publishing notes.
+7. Write `cover.txt` as the cover-generation brief. The cover count and content must align one-to-one with the recommended title options in `publish.md`; create one cover prompt for each title option, with a minimum of 5 cover prompts.
+8. Generate one finished cover image for each recommended title option under `covers/` when image generation is available, with a minimum of 5 images. Use `gpt-image2` by default for image generation. Name them `cover-01`, `cover-02`, `cover-03`, etc. in the same order as the `publish.md` title options, with the native image extension returned by the tool, such as `.jpg`, `.jpeg`, or `.png`.
 9. Write `review.md` with factual, copyright, privacy, AI-labeling, cover consistency, and human sign-off checks.
 10. Run the completion check from `references/article-pack-spec.md` before finishing.
 
@@ -51,13 +51,15 @@ cover.txt
 covers/cover-01.(jpg|jpeg|png)
 covers/cover-02.(jpg|jpeg|png)
 covers/cover-03.(jpg|jpeg|png)
+covers/cover-04.(jpg|jpeg|png)
+covers/cover-05.(jpg|jpeg|png)
 publish.md
 review.md
 ```
 
 Use lowercase ASCII slugs when possible.
 
-If image generation is unavailable or the user asks for text-only output, still write `cover.txt` and clearly mark missing cover images in `review.md`.
+If image generation is unavailable, `gpt-image2` is unavailable, or the user asks for text-only output, still write `cover.txt` and clearly mark missing cover images or model limitations in `review.md`.
 
 ## Content Rules
 
@@ -65,4 +67,4 @@ If image generation is unavailable or the user asks for text-only output, still 
 - Do not promise guaranteed revenue, traffic, follower growth, ranking, or platform approval.
 - If the topic depends on current software behavior, documentation, prices, laws, policies, or product capabilities, verify with current official sources before writing.
 - For business, education, health, finance, legal, recruitment, minors, or current-event topics, flag uncertain claims for human fact-checking.
-- Keep cover titles and publishing copy consistent with `article.md`; do not add stronger claims in the packaging than the article supports.
+- Keep cover titles, description copy, and publishing copy consistent with `article.md`; do not add stronger claims in the packaging than the article supports.

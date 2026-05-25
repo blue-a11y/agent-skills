@@ -8,7 +8,7 @@ It generates:
 - `article.md`
 - `topics.md`
 - `cover.txt`
-- at least three cover images under `covers/`
+- at least five cover images under `covers/`, aligned one-to-one with publish title options
 - `publish.md`
 - `review.md`
 

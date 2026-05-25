@@ -8,6 +8,14 @@
 4. <反常识型：挑战常见误区，但不夸张>
 5. <好奇型：制造信息缺口，但不标题党>
 
+## Description Options
+
+1. <描述文案 1：不超过 30 个汉字>
+2. <描述文案 2：不超过 30 个汉字>
+3. <描述文案 3：不超过 30 个汉字>
+4. <描述文案 4：不超过 30 个汉字>
+5. <描述文案 5：不超过 30 个汉字>
+
 ## Caption
 
 <正文第一句承接文章观点。第二句补充价值。第三句引导 CTA。不要加入 article.md 里没有的事实、数据或承诺。>
@@ -34,7 +42,10 @@
 
 ## Manual Publishing Notes
 
-- Check cover title matches `cover.txt`.
+- Check `article.md` does not contain a title.
+- Check title options and description options are all in `publish.md`.
+- Check each description option is no more than 30 Chinese characters.
+- Check cover titles and image content align one-to-one with the title options above.
 - Check caption and hashtags do not add new claims.
 - Check recommended publishing time against the account's actual audience activity data when available.
 - Check whether AI-assisted labeling is needed before publishing.
