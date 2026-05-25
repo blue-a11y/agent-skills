@@ -122,6 +122,7 @@ Include:
 - the same title options from `publish.md`, in the same order
 - 2-3 visual directions
 - design notes for safe area, contrast, and text length
+- default device styling: when a keyboard appears, use a white Apple Magic Keyboard-style keyboard unless the user requests another keyboard style
 - one cover prompt for each title option in `publish.md`, with a minimum of 5 cover prompts
 - the intended output filename for each prompt, such as `covers/cover-01.png`
 - risky claims or words to avoid

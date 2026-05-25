@@ -20,13 +20,14 @@ Title-to-cover mapping:
 
 Cover visual directions:
 - <人物/主体：谁在画面里，表情或动作是什么>
-- <背景/场景：门店、电脑屏幕、白板、流程图等>
+- <背景/场景：门店、电脑屏幕、白板、流程图等；如果出现键盘，默认使用白色 Apple Magic Keyboard 风格>
 - <版式：大标题位置、字号层级、对比色、留白>
 
 Design notes:
 - Safe area: keep key text away from edges.
 - Text length: prefer 8-14 Chinese characters for the main title.
 - Contrast: make the main title readable on a phone screen.
+- Keyboard style: when included, use a clean white Apple Magic Keyboard-style keyboard unless the user requests another style.
 
 Risky claims or words to avoid:
 - <确定收益、保证涨粉、夸大承诺、未证实数字>
