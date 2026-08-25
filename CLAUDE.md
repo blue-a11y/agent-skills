@@ -23,7 +23,6 @@ Each skill is self-contained in its own directory under `skills/`. The `SKILL.md
 |-------|---------|
 | `ai-commit` | AI-powered git commit message generator (Conventional Commits format) |
 | `ahooks-userequest` | ahooks `useRequest` best practices guide with scenario examples |
-| `blue-coding-style` | Opinionated React + TypeScript coding style guide |
 
 ## Adding a New Skill
 
